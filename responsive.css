@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 0 50px;
+  }
+  .nav-container .logo {
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+
+  .menu .nav-link {
+    position: unset;
+  }
+
+  .menu .nav-link::after {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .socials {
+    margin-top: 3rem;
+    justify-content: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+    z-index: 2;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    padding-top: 6rem;
+    align-items: center;
+    text-align: center;
+    background-color: #4D4DDB;
+    color: white;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+  }
+
+  .nav.active {
+    display: block;
+    right: 0;
+  }
+}
