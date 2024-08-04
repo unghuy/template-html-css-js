@@ -1,0 +1,120 @@
+/* screen widths */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+nav {
+  margin: 30px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background: #654F97;
+  border-radius: 10px;
+}
+nav ul li {
+  padding: 10px 0;
+}
+nav ul li a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  color: rgb(41, 255, 3);
+}
+@media only screen and (max-width: 991px) {
+  nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #654F97;
+    transition: 0.5s;
+    margin: 0;
+    padding: 30px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 10px 0;
+  }
+  nav.active {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-switch {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background: #4f3d76;
+  }
+  .nav-switch span {
+    color: #fff;
+    position: relative;
+    margin: 28px auto 0;
+  }
+  .nav-switch span, .nav-switch span:before, .nav-switch span:after {
+    content: "";
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    display: block;
+    border-radius: 1px;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-switch span:before {
+    top: -9px;
+    position: absolute;
+  }
+  .nav-switch span:after {
+    bottom: -9px;
+    position: absolute;
+  }
+  .nav-switch.active {
+    background: #654F97;
+  }
+  .nav-switch.active span {
+    background: none;
+  }
+  .nav-switch.active span:before, .nav-switch.active span:after {
+    top: 0;
+  }
+  .nav-switch.active span:before {
+    transform: rotate(45deg);
+  }
+  .nav-switch.active span:after {
+    transform: rotate(-45deg);
+  }
+}/*# sourceMappingURL=style.css.map */
