@@ -2,6 +2,7 @@
   --dark: #333333;
   --white: #f2f2f2;
   --green: rgb(2, 250, 35);
+  --darken: rgba(0, 0, 0, 0.4);
 }
 * {
   box-sizing: border-box;

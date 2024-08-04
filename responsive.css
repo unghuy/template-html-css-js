@@ -1,7 +1,9 @@
-@media only screen and (max-width: 1024px) {
+/* nav */
+@media only screen and (max-width: 1280px) {
   .container {
     margin: 0 50px;
   }
+
   .nav-container .logo {
     font-size: 1.2rem;
     z-index: 2;
@@ -49,5 +51,76 @@
   .nav.active {
     display: block;
     right: 0;
+  }
+
+  /* Navbar 1 */
+  .menu-left ul {
+    clear: both;
+  }
+
+  .menu-left ul li {
+    padding: .5em 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* NavBar 1 */
+  .menu-left {
+    clear: both;
+  }
+  .menu-left li {
+    padding: .5rem 0;
+  }
+}
+
+/* Navbar 1 */
+@media (min-width: 0px) {
+  .container {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+
+  header .nav-1 .menu-left li a {
+    display: block;
+    padding: .425rem 0rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  header nav ul li {
+    float: left;
+    margin-left: 1rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  ul.menu-left {
+    display: block !important;
+    float: right;
+    max-height: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
 }
